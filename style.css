@@ -144,12 +144,58 @@ span {
 /*Hero section*/
 
 .hero-section {
-    background-image: url("homeimg.jpg");
     background-size: cover;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    height: 400px;
+    overflow: hidden;
+    ;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+}
+
+/* .hero-img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 1px;
+    position: relative;
+
+      
+} */
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: 2second 0;
+    transition-delay: 1sec;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 10px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+button i {
+    font-size: 30px;
+}
+
+#prv-btn {
+    height: 50px;
+
+}
+
+#nxt-btn {
+    height: 50px;
 }
 
 .hero-msg {
@@ -176,6 +222,8 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: rgb(223, 222, 222);
+    /* margin-top: 170px; */
+    z-index: 1;
 
 }
 
@@ -244,9 +292,9 @@ ul a {
     background-color: #222f3d;
     color: #dddddd;
     border-top: 0.5px solid white;
-    height:70px;
+    height: 70px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
@@ -268,10 +316,14 @@ ul a {
     align-items: center; */
 }
 
+.foot-panel2 ul p {
+    font-weight: 700;
+}
+
 .pages {
     padding-top: 10px;
 }
 
 .copyright {
-    padding-top:  5px;
+    padding-top: 5px;
 }
